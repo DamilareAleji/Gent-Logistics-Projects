@@ -151,3 +151,45 @@ nav ul li a:hover{
 .inputtag img:hover{
     cursor: pointer;
 }
+
+/* tracker-infopage style */
+
+.tracker-infopage{
+    width: 1440px;
+    height: 807px;
+    background-color: var(--mainwhite);
+    padding: 120px 80px 309px;
+}
+
+table{
+    width: 1280px;
+    height: 378px;
+    
+}
+
+#tracker-infotable{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#tracker-infotable tr:nth-child(odd){
+    background-color: #E8F2FA;
+    ;
+}
+
+#tracker-infotable tr{
+    width: 100%;
+    height: 54px;
+    padding: 12px 10px;
+}
+
+#tracker-infotable tr td{
+    padding: 12px 10px;
+    color: var(--mainblack);
+}
+
+
