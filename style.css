@@ -6,6 +6,8 @@
     --mainwhite: #ffffff;
     --mainblack: #1E1E1E;
     --mainblue: #0B60A9;
+    --maindarkgrey: #A0A0A0;
+
 }
 
 
@@ -21,7 +23,7 @@
 
 body{
     width: 100vw;
-    background-color: var(--mainwhite);
+    background-color: black;
     
 }
 
@@ -44,6 +46,7 @@ nav{
     align-items: center;
     padding-right: 80px;
     padding-left: 56px;
+    background-color: var(--mainwhite);
 }
 
 nav ul{
@@ -98,5 +101,53 @@ nav ul li a:hover{
     font-weight: 700;
     line-height: 57.6px;
     color: var(--mainwhite);
+    margin-bottom: 46px;
 }
 
+.inputtag{
+    position: relative;
+    width: 1018px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.inputtag input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 32px;
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--maindarkgrey);
+}
+
+.inputtag button{
+    position: absolute;
+    width: 196px;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    background-color: var(--mainblue);
+    color: var(--mainwhite);
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.inputtag button:hover{
+    cursor: pointer;
+}
+
+.inputtag img{
+    position: absolute;
+    left: 770px;
+}
+
+.inputtag img:hover{
+    cursor: pointer;
+}
