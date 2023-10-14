@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Quote</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Readex Pro' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <!-- navbar starts -->
+
+     <!-- navbar starts -->
     <div class="container">
         <nav>
             <img src="image 1Gentlogo.png" alt="Gent Logistics Logo">
@@ -29,73 +29,75 @@
         </nav>
     </div>
 
-    <!-- Hero-section-contactus starts -->
+    <!-- Hero-section-quote starts -->
 
     <div class="container">
-        <div class="hero-section-contactus">
-            <div class="hero-section-contactus-content">
-                <h1>Contact Us</h1>
-                <p>Need help? Contact our friendly customer support for quick assistance!</p>
+        <div class="hero-section-quote">
+            <div class="hero-section-quote-content">
+                <h1>Get a Quote with our Calculator</h1>
+                <p>Calculate the estimate cost of our services that you wish to use.</p>
             </div>
         </div>
     </div>
-
-    <!-- Contact-form page starts -->
+    
+    <!-- Quote-form page starts -->
     <div class="container">
-        <div class="contactform-page">
-            <div class="contactdetails">
-                <div class="contactaddress">
-                    <img src="Address.png" alt="">
-                    <div class="text">
-                        <h2>Office Address</h2>
-                        <ul>
-                            <li>2972 Westheimer Rd.</li>
-                            <li>Santra Ana, Illinois 85486</li>
-                        </ul>
+        <div class="quote-page">
+            <div class="quote-details">
+                <div class="measurementunit">
+                    <span>Measurement Unit:</span>
+                    <div class="radiobuttonunit">
+                        <div class="metric">
+                            <input type="radio" id="metric" class="radiobut" name="radioname">
+                            <label for="metric">Metric</label>
+                        </div>
+                        <div class="imperial">
+                            <input type="radio" id="imperial" class="radiobut" name="radioname">
+                            <label for="imperial">Imperial</label>
+                        </div>
                     </div>
                 </div>
-                <div class="emailaddress">
-                    <img src="email.png" alt="">
-                    <div class="text">
-                        <h2>Email Address</h2>
-                        <ul>
-                            <li>info@gentslogistics.com</li>
-                        </ul>
+
+                <form action="" id="quote-form">
+                    <div class="quotelabel" id="Servicetype">
+                        <label for="servicetype">Service Type</label>
+                        <input type="text" id="servicetype" placeholder="Select the service">
+                        <img src="Vector.png" alt="">
                     </div>
-                </div>
-                <div class="phoneline">
-                    <img src="Phone.png" alt="">
-                    <div class="text">
-                        <h2>Phone Line</h2>
-                        <ul>
-                            <li>(629)555-0129</li>
-                            <li>(229)555-0109</li>
-                        </ul>
+                    <div class="quotelabel" id="Height">
+                        <label for="height">Height (cm)</label>
+                        <input type="text" id="height">
                     </div>
-                </div>
+                    <div class="quotelabel" id="Width">
+                        <label for="width">Width (cm)</label>
+                        <input type="text" id="width">
+                    </div>
+                    <div class="quotelabel" id="Depth">
+                        <label for="depth">Depth (cm)</label>
+                        <input type="text" id="depth">
+                    </div>
+                    <div class="quotelabel" id="Weight">
+                        <label for="weight">Weight (kg)</label>
+                        <input type="text" id="weight">
+                    </div>
+                    <div class="slidecontainer">
+                        <label for="myRange">Distance (km)</label>
+                        <input type="range" min="1" max="100" value="0" class="slider" id="myRange">
+                        <input type="text" placeholder="Approx.    00" id="approx">
+                    </div>
+                    <div class="check-box">
+                        <label for="" style="width: 140px;height: 25px;margin-right: 8px;"></label>
+                        <input type="checkbox" id="check_box">
+                        <label for="check_box" id="labeltext">Include insurance in billing (recommended).</label>
+                    </div>
+                    <button>Calculate</button>
+                    <div class="totalcost">
+                        <label for="total-cost">Total Cost</label>
+                        <input type="text" id="total-cost">
+                    </div>
+                </form>
             </div>
-            <form action="" class="contactus-form">
-                <div class="contactform">
-                    <h1>Drop a Message for Us</h1>
-                    <div class="label_input">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" placeholder="First and Last Name">
-                    </div>
-                    <div class="label_input">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Your email address">
-                    </div>
-                    <div class="label_input">
-                        <label for="subject">Subject</label>
-                        <input type="text" id="subject" placeholder="The subject of this message">
-                    </div>
-                    <div class="label_input">
-                        <label for="message" id="messagelabel">Message</label>
-                        <textarea name="message" id="message" placeholder="We value your feedback! How can we assist you today?"></textarea>
-                    </div>
-                    <button>Send</button>
-                </div>
-            </form>
+            
         </div>
     </div>
 
@@ -133,6 +135,5 @@
             </div>
             <p>© 2022 GentLogistics</p>
         </footer>
-    </div>
 </body>
 </html>
