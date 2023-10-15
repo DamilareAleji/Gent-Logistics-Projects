@@ -44,6 +44,7 @@ body{
 /* the navbar style */
 
 nav{
+    position: relative;
     display: flex;
     width: 100%;
     height: 108px;
@@ -52,6 +53,7 @@ nav{
     padding-right: 80px;
     padding-left: 56px;
     background-color: var(--mainwhite);
+    z-index: 50;
 }
 
 nav ul{
@@ -222,8 +224,10 @@ footer p{
 }
 
 footer .footermenu{
+    width: 852px;
+    height: 201px;
     display: flex;
-    margin: 64px 329px 56px;
+    margin: 64px 294px 56px;
     justify-content: space-between
 }
 
@@ -755,4 +759,276 @@ footer .footermenu{
     font-weight: 500;
     line-height: 30px;
     color: #1E1E1E;
+}
+
+
+/* -----------About Us page style-------------- */
+
+
+/* Hero-section-aboutus starts */
+
+.hero-section-aboutus{
+    position: relative;
+    width: 100%;
+    height: 616px;
+    margin-top: -90px;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(73, 96, 115, 0.63), rgba(73, 96, 115, 0.63)),
+    url('image\ 2.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+
+/* whatwedohere starts */
+
+.whatwedohere-wrapper{
+    position: relative;
+    width: 100%;
+    height: 838.58px;
+    background-color: var(--mainwhite);
+    padding: 120px 80px 309px;
+}
+
+.whatwedohere-content{
+    position: absolute;
+    width: 100%;
+    height: 727px;
+    bottom: 0;
+    left: 0;
+    background: url('Rectangle\ 7.png');
+}
+
+.bigtext{
+    margin-top: 42px;
+    margin-left: 80px;
+    width: 550px;
+    height: 77px;
+    top: 42px;
+    left: 80px;
+}
+
+.bigtext span{
+    font-family: 'Lato';
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-color: #d6d6d6;
+    -webkit-text-stroke-width: 2px;    
+}
+
+.bigquoteandmaintext{
+    display: flex;
+    width: 1169px;
+    height: 462px;
+    top: 310px;
+    left: 223px;
+    gap: 14px;
+    margin-top: 190px;
+    margin-left: 223px;
+}
+
+.bigquote{
+    width: 160px;
+    height: 368px;
+}
+
+.bigquote span{
+    font-family: 'Helvetica';
+    font-size: 320px;
+    font-weight: 700;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-color: #d6d6d6;
+    -webkit-text-stroke-width: 2px;
+}
+
+.maintext-writeup p{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #f8f8f8;
+}
+
+.maintext-writeup{
+    width: 975px;
+    height: 360px;
+    margin-top: -45px;
+}
+
+
+/* Ourachievement starts */
+
+.ourachievementsection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 582px;
+    background-color: var(--mainwhite);
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.ourachievementsection h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    color: #1E1E1E;
+}
+
+.achievementstats{
+    width: 1200px;
+    height: 119px;
+    display: flex;
+    justify-content: center;
+}
+
+.achievementstats-unit{
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.achievementstats-unit span{
+    font-family: 'Lato';
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 64.8px;
+    color: #08487f;
+}
+
+.achievementstats-unit p{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #415667;
+}
+
+
+/* meet the management starts */
+
+.meetthemanagementsection{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 727px;
+    background: url('Rectangle\ 18.png');
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.meetthemanagementsection h1{
+    position: absolute;
+    top: 39px;
+    left: 80px;
+    font-family: 'Lato';
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 77px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: transparent;
+    -webkit-text-stroke-color: #ffffff;
+    -webkit-text-stroke-width: 2px;    
+}
+
+.managementprofile{
+    display: flex;
+    width: 100%;
+    height: 411px;
+    padding: 0 80px;
+    justify-content: space-between;
+}
+
+.individualprofile{
+    width: 300px;
+    height: 411px;
+    justify-content: center;
+    gap: 26.67px;
+}
+
+.managementprofile .profileimage{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 32px;
+}
+
+.profiledetails{
+    width: 217px;
+    height: 79px;
+    padding:0 10px;
+    border-left: 6px solid;
+    border-image: linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(8, 72, 127, 1))1;
+}
+
+.profiledetails p{
+    height: 15px;
+    font-family: 'Readex Pro';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #a0a0a0;
+}
+
+.profiledetails span{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #ffffff;
+}
+
+.socialhandles{
+    margin-top: 10px;
+    width: 126px;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socialhandles img:hover{
+    cursor: pointer;
+}
+
+
+
+/* Transport Infography starts */
+
+.ourtransportinfography{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 926px;
+    background-color: var(--mainwhite);
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-left: 147px;
+    padding-right: 147px;
+    padding-top: 116px;
+    padding-bottom: 72px;
+}
+
+.ourtransportinfography h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
 }
