@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Lato:wght@100;300;400;700;900&family=Lora:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Righteous&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 /* root style */
 
 :root{
@@ -87,6 +91,19 @@ nav ul li a{
 nav ul li a:hover{
     color: var(--mainblue);
 }
+
+nav #trackshipment{
+    background-color: #0B60A9;
+    width: 216px;
+    height: 65px;
+    padding: 20px 32px;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #ffffff;
+}
+
 
 /* Hero-section style */
 
@@ -653,7 +670,7 @@ footer .footermenu{
     color: #1E1E1E;
 }
 
-.slider{
+.sliders{
     -webkit-appearance: none; 
     width: 494px;
     height: 16px;
@@ -663,7 +680,7 @@ footer .footermenu{
     border-radius: 20px;
 }
 
-.slider::-webkit-slider-thumb {
+.sliders::-webkit-slider-thumb {
     -webkit-appearance: none; 
     appearance: none;
     width: 36px; 
@@ -1031,4 +1048,515 @@ footer .footermenu{
     font-size: 48px;
     font-weight: 600;
     line-height: 57.6px;
+}
+
+
+/* -----------Homepage style-------------- */
+
+
+/* Hero-section-homepage starts */
+
+.Hero-section-homepage{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    margin-top: -80px;
+}
+
+
+
+
+
+/* -----image slider effect---- */
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 900px;
+    position: relative;
+    border-radius: 0;
+  }
+  
+  .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slider 9s infinite; /* Adjust the animation duration as needed */
+  }
+  
+  .slider .slide:nth-child(1) {
+    background-image: url('Property\ 1=Variant3.png');
+    animation-delay: 0s;
+  }
+  
+  .slider .slide:nth-child(2) {
+    background-image: url('Property\ 1=Variant2.png');
+    animation-delay: -3s;
+  }
+  
+  .slider .slide:nth-child(3) {
+    background-image: url('Property\ 1=Default.png');
+    animation-delay: -6s;
+  }
+  
+  @keyframes slider {
+    0%, 25%, 100% {
+      transform: translateY(0);
+      animation-timing-function: ease;
+    }
+    33.33% {
+      transform: translateY(-100%);
+      animation-timing-function: step-end;
+    }
+    75% {
+      transform: translateY(-100%);
+    }
+    91.67% {
+      transform: translateY(0);
+      animation-timing-function: ease;
+    }
+  }
+
+  /* -----image slider effect---- */
+
+  .hero-section-homepage-content{
+    position: absolute;
+    top: 373px;
+    left: 73px;
+  }
+
+.hero-section-homepage-content h1{
+    width: 800px;
+    height: 186px;
+    font-family: 'Noto Serif';
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 92.62px;
+    color: var(--mainwhite);
+    margin-bottom: 24px;
+    padding:0 37px;
+    border-left: 12px solid;
+    border-image: linear-gradient(180deg, rgba(248, 248, 248, 1), rgba(8, 72, 127, 1))1;
+}
+
+.hero-section-homepage-content p{
+    width: 564px;
+    height: 75px;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #ffffff;
+    margin-bottom: 24px;
+}
+
+.hero-section-homepage-content button{
+    width: 207px;
+    height: 65px;
+    padding: 20px 48px;
+    background-color: white;
+    border: none;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: #08487f;
+}
+
+.hero-section-homepage-content button:hover{
+    cursor: pointer;
+    background-color: #08487f;
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+}
+
+
+/* Brand gallery style */
+
+.brands{
+    position: relative;
+    width: 100%;
+    height: 336px;
+    background-color: var(--mainwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.carousel-container {
+    width: 956px;
+    height: 89.32px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.logo-carousel {
+    display: inline-block;
+    animation: scroll 12s linear infinite;
+}
+
+.logo-carousel:hover{
+    animation-play-state: paused;
+}
+
+.logo {
+    width: 150px; /* Adjust this width as needed */
+    height: 150px; /* Adjust this height as needed */
+    margin: 0 10px;
+    text-align: center;
+    line-height: 150px;
+    display: inline-block;
+    white-space: normal;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-600px); /* Adjust this value based on logo width and number of logos */
+    }
+}
+
+.arrowsimage{
+    position: absolute;
+    top: 170px;
+}
+
+.arrows{
+    display: flex;
+    gap: 996px;
+}
+
+.arrow1{
+    display: inline-block;
+}
+
+.brands h1{
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.service-strength{
+    position: relative;
+    width: 100%;
+    height: 687px;
+    background-color: var(--mainwhite);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    padding: 0 80px;
+}
+
+.servicegallery{
+    display: flex;
+    gap: 16px;
+}
+
+.service-strength h3{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.service-strength h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6x;
+    margin-top: -30px;
+}
+
+.service-card{
+    position: relative;
+    width: 305px;
+    height: 270px;
+}
+
+.service-card:hover .service-frontcard{
+    opacity: 0;
+    transition: 0.4s ease-out;
+}
+
+.service-card:hover .service-backcard{
+    opacity: 1;
+}
+
+.service-frontcard{
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-top: 8px solid;
+    border-color: #08487f;
+    padding: 44px 79px 44px 79px;
+    background-color: #F8F8F8;
+    z-index: 23;
+    box-shadow: 0px 0px 36px 0px #1E1E1E29;
+}
+
+.service-frontcard img{
+    width: 72px;
+    height: 72px;
+    margin-bottom: 24px;
+}
+
+.service-frontcard h2{
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #08487f;
+}
+
+.service-backcard{
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    padding: 32px 18px;
+    background-color: #08487f;
+    color: var(--mainwhite);
+}
+
+.service-backcard img{
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.service-backcard h4{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.service-backcard h5{
+    font-family: 'Readex Pro';
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.cardh5{
+    display: flex;
+    width: 257px;
+    height: 145px;
+    align-items: center;
+}
+
+.imageheading{
+    display: flex;
+    width: 257px;
+    height: 36px;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.service-strength p{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.service-strength button{
+    width: 247px;
+    height: 65px;
+    padding: 20px 32px;
+    background-color: #0B60A9;
+    color: var(--mainwhite);
+    margin-bottom: 13px;
+    border: none;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.service-strength button:hover{
+    background-color: var(--mainwhite);
+    border-color: #0B60A9;
+    border: 3px solid;
+    color: #0B60A9;
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+
+/* --------------Testimony section style------------------ */
+
+.testimonies{
+    position: relative;
+    width: 100%;
+    height: 864px;
+    background-image: url('Frame\ 63.png');
+    display: flex;
+    padding: 127px 80px;
+    justify-content: space-between;
+}
+
+.testimonybox{
+    position: relative;
+    width: 400px;
+    height: 643px;
+    background-color: rgba(0, 0, 0, .35);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.testimonybox #quotemark{
+    position: absolute;
+    font-size: 300px;
+    font-weight: 700;
+    line-height: 384px;
+    font-family: 'Lora';
+    color: #415667;
+    top: -20px;
+    left: 30px;
+}
+
+.testimonybox #statement{
+    position: absolute;
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 332px;
+    height: 194px;
+    top: 191px;
+    left: 34px;
+    text-align: justify;
+    color: #ffffff;
+}
+
+.testifier{
+    position: absolute;
+    width: 250px;
+    height: 63px;
+    bottom: 36px;
+    right: 24px;
+}
+
+.testifier h1{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: right;
+    color: var(--mainwhite);
+}
+
+.testifier h2{
+    font-family: 'Readex Pro';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: right;
+    color: #415667;
+}
+
+
+
+
+/* ---------------- Our Achievement Style ------------------ */
+
+.achievements{
+    position: relative;
+    width: 100%;
+    height: 766px;
+    background-color: var(--mainwhite);
+    display: flex;
+    padding: 120px 84px 279px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.achievements #question{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #1E1E1E;
+    margin-bottom: 6px;
+}
+
+.achievements h1{
+    font-family: 'Lato';
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 57.6px;
+    color: #1E1E1E;
+}
+
+.stats{
+    display: flex;
+    gap: 24px;
+}
+
+.stats-info{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 231px;
+    align-items: center;
+    margin-top: 42px;
+}
+
+.stats-info .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.stats-info h2{
+    font-family: 'Lato';
+    font-size: 54px;
+    font-weight: 500;
+    line-height: 64.8px;
+    color: #cf0404;
+}
+
+.text-data h3{
+    font-family: 'Readex Pro';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #415667;
+}
+
+.text-data #textstatement{
+    font-family: 'Readex Pro';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #415667;
 }
